@@ -1,0 +1,5 @@
+#!/bin/bash
+
+chmod +x test/make-result
+test/make-result
+diff test/test-result.sample test/test-result.out
