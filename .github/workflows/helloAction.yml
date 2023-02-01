@@ -7,13 +7,13 @@ on:
       branches: [ main ]
 
 jobs:
-  build-and-test:
-      runs-on: ubuntu-latest
-      steps:
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: configure
-      run: ./configure
+        run: ./configure
       - name: make
-      run: make && chmod +x main
+        run: make && chmod +x main
       - name: test
-      run: chmod +x test/all && test/all
+        run: chmod +x test/all && test/all
