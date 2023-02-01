@@ -2,8 +2,12 @@ Start
 === test/00.test ===
 alala
 --- Test --->
-Bonjour, le Monde!
+Bonjour, alala!
 === test/01.test ===
 Alexey
+--- Test --->
+Bonjour, Alexey!
+=== test/02.test ===
+
 --- Test --->
 Bonjour, le Monde!

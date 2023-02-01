@@ -7,7 +7,7 @@ do
     echo "=== ${file} ===" >> test/test-result.out
     cat ${file} >> test/test-result.out
     echo "--- Test --->" >> test/test-result.out
-    build/main < ${file} >> test/test-result.out
+    build/main $(cat $file) >> test/test-result.out
 done
 
 exit 0
