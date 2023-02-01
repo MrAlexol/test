@@ -14,6 +14,6 @@ jobs:
       - name: configure
         run: ./configure
       - name: make
-        run: make && chmod +x main
+        run: make && chmod +x build/main
       - name: test
         run: chmod +x test/all && test/all
